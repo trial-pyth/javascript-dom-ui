@@ -1,0 +1,389 @@
+@import "../../global.scss";
+
+.footer {
+  width: 100%;
+  height: 362px;
+  background-color: #f8f8f8;
+  position: relative;
+  display: flex;
+
+  @include mobile {
+    width: 100%;
+    height: 608px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .footer-img {
+    width: 161px;
+    height: 125px;
+    margin-top: 123px;
+    margin-left: 103px;
+
+    @include mobile {
+      width: 75px;
+      height: 58px;
+      margin: 52px 152px 42px 149px;
+    }
+  }
+
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 210px;
+
+    @include mobile {
+      margin-left: 42px;
+      margin-top: 0px;
+    }
+
+    .contact {
+      width: 94px;
+      height: 27px;
+      font-family: "Source Sans Pro";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18.8433px;
+      line-height: 27px;
+      letter-spacing: 0.03em;
+      margin-top: 84px;
+      margin-bottom: 14px;
+
+      /* primary */
+
+      color: #0e2368;
+
+      @include mobile {
+        margin-top: 0px;
+        width: 119px;
+        height: 35px;
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15.771px;
+        line-height: 35px;
+        /* identical to box height, or 221% */
+        margin-bottom: 0;
+        letter-spacing: 0.03em;
+      }
+    }
+
+    .address {
+      width: 217px;
+      height: 69px;
+      font-family: "Source Sans Pro";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14.6559px;
+      line-height: 23px;
+      color: #646874;
+      margin-bottom: 15px;
+
+      @include mobile {
+        width: 275px;
+        height: 25px;
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8.76168px;
+        line-height: 12px;
+        /* or 140% */
+        margin-bottom: 0;
+        color: #646874;
+      }
+    }
+
+    .email {
+      width: 232px;
+      height: 23px;
+      font-family: "Source Sans Pro";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14.6559px;
+      line-height: 23px;
+      color: #646874;
+      cursor: pointer;
+
+      @include mobile {
+        width: 293px;
+        height: 29px;
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8.76168px;
+        line-height: 29px;
+        /* or 336% */
+
+        color: #646874;
+      }
+    }
+
+    .phone {
+      width: 91px;
+      height: 23px;
+      font-family: "Source Sans Pro";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14.6559px;
+      line-height: 23px;
+      /* identical to box height, or 157% */
+
+      text-align: center;
+
+      color: #646874;
+
+      @include mobile {
+        width: 54px;
+        height: 30px;
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8.76168px;
+        line-height: 29px;
+        /* identical to box height, or 336% */
+
+        text-align: center;
+
+        color: #646874;
+      }
+    }
+  }
+
+  .links-section {
+    display: flex;
+    flex-direction: column;
+    left: 899px;
+    padding-bottom: 12px;
+    margin-left: 206px;
+
+    @include mobile {
+      margin-left: 46px;
+      justify-content: flex-end;
+      padding-bottom: 12px;
+    }
+    .more {
+      width: 43px;
+      height: 27px;
+      font-family: "Source Sans Pro";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18.8433px;
+      line-height: 27px;
+      /* or 144% */
+
+      letter-spacing: 0.03em;
+
+      /* primary */
+
+      color: #0e2368;
+      margin-top: 84px;
+
+      @include mobile {
+        padding-bottom: 0;
+
+        width: 55px;
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15.771px;
+        /* identical to box height, or 221% */
+
+        letter-spacing: 0.03em;
+
+        color: #0e2368;
+
+        margin-top: 29px;
+
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+
+    .about-us {
+      display: flex;
+      align-items: center;
+      width: 75px;
+      font-family: "Source Sans Pro";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14.6559px;
+      line-height: 27px;
+      /* or 186% */
+      cursor: pointer;
+
+      color: #646874;
+
+      @include mobile {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8.76168px;
+        /* identical to box height, or 397% */
+
+        color: #646874;
+      }
+    }
+
+    .products {
+      width: 153px;
+      height: 26px;
+      font-family: "Source Sans Pro";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 27px;
+      /* or 180% */
+      cursor: pointer;
+
+      color: #646874;
+
+      @include mobile {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8.76168px;
+        /* identical to box height, or 397% */
+
+        color: #646874;
+      }
+    }
+
+    .career {
+      width: 86px;
+      height: 26px;
+      font-family: "Source Sans Pro";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 27px;
+      cursor: pointer;
+      /* or 180% */
+
+      color: #646874;
+
+      @include mobile {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8.76168px;
+      }
+    }
+
+    .contact-us {
+      width: 94px;
+      height: 26px;
+      font-family: "Source Sans Pro";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 27px;
+      /* or 180% */
+      cursor: pointer;
+
+      color: #646874;
+
+      @include mobile {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8.76168px;
+      }
+    }
+  }
+
+  .media-section {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 129px;
+    height: 27px;
+    left: 1208px;
+
+    @include mobile {
+      position: absolute;
+      z-index: 23;
+      top: 0;
+      bottom: 0;
+    }
+
+    .media-status {
+      width: 129px;
+      height: 27px;
+      margin-top: 84px;
+      font-family: "Source Sans Pro";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 19px;
+      line-height: 27px;
+      align-self: flex-end;
+      /* identical to box height, or 142% */
+
+      letter-spacing: 0.03em;
+      color: #0e2368;
+
+      @include mobile {
+      }
+    }
+
+    .img-container {
+      margin-top: 11px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .img {
+        width: 21px;
+        height: 21px;
+        object-fit: contain;
+        cursor: pointer;
+      }
+
+      @include mobile {
+        position: absolute;
+        left: 150px;
+        bottom: 107px;
+      }
+    }
+  }
+
+  .copyright {
+    position: absolute;
+    width: 197px;
+    height: 25px;
+    left: 1140px;
+    top: 245px;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14.6559px;
+    line-height: 25px;
+    /* or 171% */
+
+    text-align: center;
+
+    /* #828B9C */
+
+    color: #828b9c;
+
+    @include mobile {
+      position: absolute;
+      width: 111px;
+      height: 33px;
+      left: 132px;
+      top: 456px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 8.76168px;
+      line-height: 32px;
+      /* identical to box height, or 367% */
+
+      text-align: center;
+
+      color: #828b9c;
+    }
+  }
+}

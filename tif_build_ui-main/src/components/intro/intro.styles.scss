@@ -1,0 +1,263 @@
+@import "../../global.scss";
+
+.intro {
+  width: 100%;
+  height: 804px;
+  display: flex;
+  position: relative;
+
+  @include mobile {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 0;
+  }
+
+  .left-container {
+    width: 705px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    // background-color: aqua;
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      padding-left: 0;
+    }
+
+    .logos {
+      background-image: url("../../assets/img/svg/header_truck.svg");
+      margin-top: 33px;
+
+      width: 107px;
+      height: 83px;
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    .heading {
+      width: 345px;
+      height: 207px;
+      margin-right: 280px;
+      margin-top: 111px;
+      font-family: "Source Sans Pro";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 62px;
+      line-height: 69px;
+      color: #0e2368;
+
+      @include mobile {
+        width: 240px;
+        height: 130px;
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        text-align: center;
+        color: #0e2368;
+        margin: 75.28px 68px 21px 67px;
+      }
+    }
+
+    .sub-heading {
+      width: 345px;
+      height: 55px;
+
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16.4447px;
+      line-height: 27px;
+      margin-top: 26px;
+      color: #444957;
+
+      @include mobile {
+        width: 249px;
+        height: 36px;
+        margin: 0 63px 28px;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 18px;
+        text-align: center;
+        color: #444957;
+      }
+    }
+
+    button {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 14px 34px;
+      gap: 7px;
+      border: none;
+      width: 190px;
+      height: 63px;
+      margin-bottom: 185px;
+      margin-top: 41px;
+      background: #e23744;
+      border-radius: 34px;
+      cursor: pointer;
+
+      @include mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 30px;
+        width: 120px;
+        height: 40px;
+        background: #e23744;
+        border-radius: 30px;
+        margin: 0px 128px 65px 128px;
+      }
+
+      span {
+        width: 121px;
+        height: 36px;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 36px;
+        letter-spacing: 0.01em;
+        color: #ffffff;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+
+        @include mobile {
+          width: 83px;
+          height: 32px;
+          ont-family: "Open Sans";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 12.2664px;
+          line-height: 32px;
+          letter-spacing: 0.01em;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  .right-container {
+    margin: 0;
+    padding: 0;
+    width: 735px;
+    display: flex;
+    height: 100%;
+    background-image: url("https://github.com/trial-pyth/tif_build_ui/blob/main/src/assets/img/svg/pizza.png?raw=true");
+    position: relative;
+    @include mobile {
+      position: relative;
+      // width: 100vw;
+      height: 413.72px;
+      background-image: url("../../assets/img/m/pizza.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .vector-img {
+      position: absolute;
+      width: 752px;
+      height: 839px;
+      right: 0px;
+      top: 0px;
+      z-index: 3;
+      background-image: url("../../assets/img/svg/top_right.png");
+      // display: none;
+      @include mobile {
+        position: absolute;
+        width: 375px;
+        height: 426px;
+        left: 0;
+        top: 0px;
+        background: url("../../assets/img/m/Vector.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    .touch-button {
+      position: relative;
+      background: #e23744;
+      width: 122px;
+      height: 42px;
+      z-index: 999;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 3px 26px;
+      gap: 10px;
+      border: 1px solid #ffffff;
+      border-radius: 21px;
+      color: #ffffff;
+      margin-top: 32px;
+      margin-left: 589px;
+      // align-self: end;
+      cursor: pointer;
+
+      @include mobile {
+        // display: none;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 4px 33px;
+        gap: 13px;
+
+        width: 87.89px;
+        height: 31px;
+        left: 268.55px;
+        top: 18px;
+
+        border: 1px solid #ffffff;
+        border-radius: 27px;
+        z-index: 999;
+      }
+
+      span {
+        width: 99px;
+        height: 36px;
+        z-index: 99;
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 36px;
+        letter-spacing: 0.03em;
+        color: #ffffff;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+
+        @include mobile {
+          width: 64px;
+          height: 27px;
+          font-family: "Source Sans Pro";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 11px;
+          line-height: 46px;
+          /* or 418% */
+
+          display: flex;
+          align-items: center;
+          letter-spacing: 0.03em;
+          z-index: 999;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

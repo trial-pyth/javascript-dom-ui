@@ -1,0 +1,180 @@
+@import "../../global.scss";
+
+.card {
+  box-sizing: border-box;
+
+  width: 381px;
+  height: 554px;
+  // left: 108px;
+  // top: 1739px;
+
+  background: #ffffff;
+  border: 1.37039px solid rgba(147, 162, 211, 0.38);
+  border-radius: 20.937px;
+
+  @include mobile {
+    width: 271px;
+    height: 484px;
+    margin: 0;
+    border: 0.876168px solid #373737;
+    border-radius: 26.7725px;
+  }
+
+  .card-image {
+    margin: 27px;
+    width: 326px;
+    height: 257px;
+    border-radius: 21px;
+
+    @include mobile {
+      width: 204px;
+      height: 166px;
+      margin-top: 40px 33px 34px 39px;
+    }
+  }
+
+  .card-title {
+    width: 285px;
+    height: 27px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 27px;
+    color: #0e2368;
+    margin-left: 43.17px;
+    margin-right: 52.83px;
+    margin-bottom: 14px;
+
+    @include mobile {
+      width: 236px;
+      height: 35px;
+      margin: 0px 16px 6px 19px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 35px;
+      /* identical to box height, or 219% */
+
+      letter-spacing: 0.05em;
+
+      /* primary */
+
+      color: #0e2368;
+    }
+  }
+
+  .card-body {
+    width: 295px;
+    height: 81px;
+
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 27px;
+    /* or 180% */
+    margin-left: 43.17px;
+    margin-right: 42.83px;
+    letter-spacing: -0.02em;
+    /* body */
+
+    color: #444957;
+
+    @include mobile {
+      width: 213px;
+      height: 106px;
+      font-family: "Source Sans Pro";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 22px;
+      /* or 183% */
+      margin: 0px 30px 26px 28px;
+      letter-spacing: -0.01em;
+
+      /* body */
+
+      color: #444957;
+    }
+  }
+
+  .card-body::before {
+    content: "PLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard...";
+
+    @include mobile {
+      content: "PLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley....";
+    }
+  }
+
+  .card-button {
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 26px;
+    gap: 10px;
+
+    width: 131px;
+    height: 42px;
+    background-color: #fff;
+    border: 1px solid #424961;
+    border-radius: 21px;
+    border: 1px solid #424961;
+    margin-left: 43.17px;
+    margin-top: 30.41px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    cursor: pointer;
+
+    @include mobile {
+      width: 118px;
+      height: 26px;
+      border: 2px solid #424961;
+      border-radius: 27px;
+      margin: 0 77px 40px 76px;
+    }
+
+    span {
+      width: 79px;
+      height: 36px;
+
+      font-family: "Source Sans Pro";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16.4447px;
+      line-height: 36px;
+      /* identical to box height, or 216% */
+
+      letter-spacing: 0.03em;
+
+      color: #424961;
+
+      /* Inside auto layout */
+
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      @include mobile {
+        width: 53px;
+        height: 46px;
+        ont-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 46px;
+        /* identical to box height, or 418% */
+
+        letter-spacing: 0.03em;
+
+        color: #424961;
+      }
+    }
+  }
+}
